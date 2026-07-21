@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ButtonPremium } from "@/components/ui/button-premium";
-import { Camera, MessageSquare } from "lucide-react";
 import Image from "next/image";
 
 export function Hero() {
@@ -40,17 +39,6 @@ export function Hero() {
             <a href="https://wa.me/5581995669242" target="_blank" rel="noopener noreferrer">
               <ButtonPremium size="lg" icon className="w-full sm:w-auto">
                 Agendar Consulta
-              </ButtonPremium>
-            </a>
-            <a href="https://wa.me/5581995669242" target="_blank" rel="noopener noreferrer">
-              <ButtonPremium size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
-                <MessageSquare className="w-5 h-5" />
-                WhatsApp
-              </ButtonPremium>
-            </a>
-            <a href="https://www.instagram.com/rodolfoalexsander.adv/" target="_blank" rel="noopener noreferrer">
-              <ButtonPremium size="lg" variant="ghost" className="gap-2 px-4 w-full sm:w-auto">
-                <Camera className="w-5 h-5" />
               </ButtonPremium>
             </a>
           </div>
