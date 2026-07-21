@@ -30,7 +30,7 @@ export function Sobre() {
                 src="/images/perfil4.jpg"
                 alt="Rodolfo Alexander"
                 fill
-                className="object-cover object-top filter grayscale group-hover:grayscale-0 transition-all duration-700"
+                className="object-cover object-top filter grayscale group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-[400ms] ease-out"
               />
             </div>
           </div>

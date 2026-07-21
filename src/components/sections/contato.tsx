@@ -46,11 +46,11 @@ export function Contato() {
           <div className="space-y-6">
             <div className="flex flex-col">
               <span className="text-sm text-muted-foreground uppercase tracking-wider mb-1">Endereço</span>
-              <span className="text-white">Av. Dr. Belmíno Correia, 460 - Nazaré, Camaragibe/PE</span>
+              <span className="text-white">Rua Abatiá, 162, Várzea, Recife - PE</span>
             </div>
             <div className="flex flex-col">
               <span className="text-sm text-muted-foreground uppercase tracking-wider mb-1">WhatsApp</span>
-              <span className="text-white">(81) 98566-9342</span>
+              <span className="text-white">(81) 99566-9242</span>
             </div>
             <div className="flex flex-col">
               <span className="text-sm text-muted-foreground uppercase tracking-wider mb-1">E-mail</span>
@@ -72,7 +72,7 @@ export function Contato() {
               <input 
                 id="nome"
                 {...register("nome")}
-                className="w-full bg-background border border-border rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                className="w-full bg-[#0a1f35] border-2 border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all duration-300 hover:border-white/20"
                 placeholder="Seu nome completo"
               />
               {errors.nome && <span className="text-destructive text-xs">{errors.nome.message}</span>}
@@ -84,7 +84,7 @@ export function Contato() {
                 <input 
                   id="telefone"
                   {...register("telefone")}
-                  className="w-full bg-background border border-border rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                  className="w-full bg-[#0a1f35] border-2 border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all duration-300 hover:border-white/20"
                   placeholder="(00) 00000-0000"
                 />
                 {errors.telefone && <span className="text-destructive text-xs">{errors.telefone.message}</span>}
@@ -95,7 +95,7 @@ export function Contato() {
                   id="email"
                   type="email"
                   {...register("email")}
-                  className="w-full bg-background border border-border rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors"
+                  className="w-full bg-[#0a1f35] border-2 border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all duration-300 hover:border-white/20"
                   placeholder="seu@email.com"
                 />
                 {errors.email && <span className="text-destructive text-xs">{errors.email.message}</span>}
@@ -108,7 +108,7 @@ export function Contato() {
                 id="mensagem"
                 rows={4}
                 {...register("mensagem")}
-                className="w-full bg-background border border-border rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary transition-colors resize-none"
+                className="w-full bg-[#0a1f35] border-2 border-white/10 rounded-sm px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 transition-all duration-300 hover:border-white/20 resize-none"
                 placeholder="Descreva brevemente seu caso..."
               />
               {errors.mensagem && <span className="text-destructive text-xs">{errors.mensagem.message}</span>}

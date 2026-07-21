@@ -25,24 +25,24 @@ export function Hero() {
           className="space-y-8 max-w-2xl"
         >
           <div className="inline-block border border-primary/30 px-4 py-1.5 rounded-full text-xs font-medium text-primary tracking-widest uppercase mb-4 bg-primary/5">
-            Consultoria & Correspondência Jurídica
+            ADVOCACIA CRIMINAL ESPECIALIZADA
           </div>
           
-          <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-white">
-            Defesa Criminal Estratégica com <span className="text-primary italic">Excelência</span>, Ética e Compromisso.
+          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white">
+            Defesa Criminal de Alta Complexidade: Protegendo sua Liberdade nos Tribunais de Todo o Brasil.
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            Atuação especializada em Lei de Drogas e Crimes Hediondos. Protegendo seus direitos com agilidade, transparência e estratégias personalizadas para os melhores resultados.
+            10 anos de atuação especializada em Lei de Drogas, Crimes Hediondos e Tribunal do Júri. Atuação técnica, combativa e discreta — da delegacia aos Tribunais Superiores.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
-            <a href="https://wa.me/558195669242" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5581995669242" target="_blank" rel="noopener noreferrer">
               <ButtonPremium size="lg" icon className="w-full sm:w-auto">
                 Agendar Consulta
               </ButtonPremium>
             </a>
-            <a href="https://wa.me/558195669242" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5581995669242" target="_blank" rel="noopener noreferrer">
               <ButtonPremium size="lg" variant="outline" className="gap-2 w-full sm:w-auto">
                 <MessageSquare className="w-5 h-5" />
                 WhatsApp
@@ -69,7 +69,7 @@ export function Hero() {
             <div className="absolute inset-0 border border-white/10 translate-x-3 -translate-y-3 rounded-sm backdrop-blur-sm bg-white/5"></div>
             
             {/* The Image */}
-            <div className="relative w-full h-full bg-[#051320] flex flex-col items-center justify-center border border-primary/20 rounded-sm shadow-2xl overflow-hidden group">
+            <div className="relative w-full h-full bg-[#051320] flex flex-col items-center justify-center border border-primary/30 rounded-sm shadow-[0_0_40px_rgba(212,175,55,0.12)] overflow-hidden group">
               <Image 
                 src="/images/perfil1.jpg"
                 alt="Rodolfo Alexander"

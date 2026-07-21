@@ -4,6 +4,8 @@ import "./globals.css";
 import { LenisProvider } from "@/components/providers/lenis-provider";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { TopBanner } from "@/components/ui/top-banner";
+import { FloatingWhatsApp } from "@/components/ui/floating-whatsapp";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-heading",
@@ -49,9 +51,11 @@ export default function RootLayout({
     >
       <body className="min-h-screen bg-background text-foreground antialiased font-sans flex flex-col">
         <LenisProvider>
+          <TopBanner />
           <Navbar />
-          <main className="flex-1 flex flex-col">{children}</main>
+          <main className="flex-1 flex flex-col pt-10">{children}</main>
           <Footer />
+          <FloatingWhatsApp />
         </LenisProvider>
       </body>
     </html>

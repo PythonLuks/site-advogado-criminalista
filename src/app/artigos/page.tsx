@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Calendar, Clock, Search, ChevronRight, ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const categorias = [
   "Todas", "Lei de Drogas", "Crimes Hediondos", "Tribunal do Júri", "Prisão", "Direitos do Acusado", "Habeas Corpus", "Execução Penal"
@@ -18,7 +19,8 @@ const artigosData = [
     category: "Direitos do Acusado",
     date: "10 Jul 2026",
     readTime: "5 min",
-    author: "Rodolfo Alexander"
+    author: "Rodolfo Alexander",
+    image: "/images/artigo_gavel.jpg"
   },
   {
     slug: "prisao-preventiva-requisitos",
@@ -27,7 +29,8 @@ const artigosData = [
     category: "Lei de Drogas",
     date: "03 Jul 2026",
     readTime: "7 min",
-    author: "Rodolfo Alexander"
+    author: "Rodolfo Alexander",
+    image: "/images/artigo_livros.jpg"
   },
   {
     slug: "habeas-corpus-stj",
@@ -36,7 +39,8 @@ const artigosData = [
     category: "Habeas Corpus",
     date: "25 Jun 2026",
     readTime: "6 min",
-    author: "Rodolfo Alexander"
+    author: "Rodolfo Alexander",
+    image: "/images/artigo_tribunal.jpg"
   }
 ];
 
@@ -130,10 +134,13 @@ export default function ArtigosPage() {
                     className="group flex flex-col h-full bg-[#051320] border border-border rounded-sm overflow-hidden hover:border-primary/50 transition-all duration-500"
                   >
                     <div className="w-full aspect-[16/9] bg-background border-b border-border/50 relative overflow-hidden flex items-center justify-center group-hover:bg-primary/5 transition-colors">
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#051320] to-transparent opacity-50 z-10"></div>
-                      <div className="relative z-20 text-muted-foreground font-heading text-lg tracking-widest opacity-50 group-hover:opacity-100 transition-opacity">
-                        [IMAGEM ARTIGO]
-                      </div>
+                      <Image 
+                        src={artigo.image} 
+                        alt={artigo.title} 
+                        fill 
+                        className="object-cover object-center filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-out" 
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#051320] via-[#051320]/40 to-transparent opacity-80 z-10 pointer-events-none"></div>
                       <div className="absolute top-4 left-4 z-20 bg-primary text-primary-foreground text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-sm shadow-md">
                         {artigo.category}
                       </div>

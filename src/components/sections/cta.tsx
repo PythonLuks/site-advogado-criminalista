@@ -41,7 +41,7 @@ export function CTA() {
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center gap-4 pt-8">
-              <a href="https://wa.me/558195669242" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/5581995669242" target="_blank" rel="noopener noreferrer">
                 <ButtonPremium size="lg" className="gap-2 w-full sm:w-auto">
                   <MessageSquare className="w-5 h-5" />
                   Falar no WhatsApp

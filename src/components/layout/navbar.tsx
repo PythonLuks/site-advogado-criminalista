@@ -34,10 +34,10 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        "fixed left-0 right-0 z-50 transition-all duration-300",
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border py-4 shadow-lg shadow-black/20"
-          : "bg-transparent py-6"
+          ? "top-0 bg-background/80 backdrop-blur-md border-b border-border py-4 shadow-lg shadow-black/20"
+          : "top-[36px] bg-transparent py-6"
       )}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
@@ -63,9 +63,11 @@ export function Navbar() {
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
-          <ButtonPremium className="ml-4" variant="outline" icon>
-            Falar no WhatsApp
-          </ButtonPremium>
+          <a href="https://wa.me/5581995669242" target="_blank" rel="noopener noreferrer" className="ml-4">
+            <ButtonPremium variant="outline" icon>
+              Falar no WhatsApp
+            </ButtonPremium>
+          </a>
         </nav>
 
         {/* Mobile Nav Toggle */}
@@ -98,9 +100,11 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <ButtonPremium className="w-full mt-4" icon>
-                Falar no WhatsApp
-              </ButtonPremium>
+              <a href="https://wa.me/5581995669242" target="_blank" rel="noopener noreferrer" className="mt-4">
+                <ButtonPremium className="w-full" icon>
+                  Falar no WhatsApp
+                </ButtonPremium>
+              </a>
             </div>
           </motion.div>
         )}
