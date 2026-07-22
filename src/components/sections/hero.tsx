@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-24 overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center pt-24 pb-32 lg:pb-40 overflow-hidden bg-background">
       {/* Background Monogram */}
       <div className="absolute right-[-10%] top-1/2 -translate-y-1/2 opacity-[0.03] select-none pointer-events-none">
         <span className="font-heading font-bold text-[600px] leading-none text-white tracking-tighter">
@@ -32,7 +32,7 @@ export function Hero() {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            10 anos de atuação especializada em Lei de Drogas, Crimes Hediondos e Tribunal do Júri. Atuação técnica, combativa e discreta — da delegacia aos Tribunais Superiores.
+            10 anos de atuação especializada em Lei de Drogas, Crimes Hediondos e Tribunal do Júri. Atuação técnica, combativa e discreta da delegacia aos Tribunais Superiores.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
