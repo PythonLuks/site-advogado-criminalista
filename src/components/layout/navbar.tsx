@@ -41,7 +41,7 @@ export function Navbar() {
       )}
     >
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="/" className="flex flex-col justify-center group">
           <Image 
             src="/logos/logo-branca.png" 
             alt="Rodolfo Alexander Logo" 
@@ -49,6 +49,7 @@ export function Navbar() {
             height={50} 
             className="h-auto w-auto max-h-[50px] opacity-90 group-hover:opacity-100 transition-opacity"
           />
+          <span className="text-[10px] text-muted-foreground tracking-wider mt-1 opacity-70 group-hover:opacity-100 transition-opacity">OAB/PE 44.544</span>
         </Link>
 
         {/* Desktop Nav */}

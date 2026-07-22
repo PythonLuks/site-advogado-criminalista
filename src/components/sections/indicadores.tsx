@@ -1,32 +1,32 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
-import { Briefcase, Star, Clock, ShieldCheck } from "lucide-react";
+import { Briefcase, Scale, Clock, ShieldCheck } from "lucide-react";
 
 const stats = [
   {
     icon: <Briefcase className="w-8 h-8 text-primary" />,
     value: "+500",
     label: "Processos",
-    desc: "Atuando com maestria",
+    desc: "Casos acompanhados em todo o Brasil",
   },
   {
-    icon: <Star className="w-8 h-8 text-primary" />,
-    value: "5.0",
-    label: "★★★★★",
-    desc: "Avaliação dos clientes",
+    icon: <Scale className="w-8 h-8 text-primary" />,
+    value: "10",
+    label: "Anos",
+    desc: "Atuação em Direito Penal",
   },
   {
     icon: <Clock className="w-8 h-8 text-primary" />,
-    value: "24/7",
+    value: "24h",
     label: "Atendimento Ágil",
-    desc: "Respostas rápidas e eficientes",
+    desc: "Atendimento em flagrantes e urgências",
   },
   {
     icon: <ShieldCheck className="w-8 h-8 text-primary" />,
     value: "100%",
-    label: "Total Sigilo",
-    desc: "Confidencialidade em todas as etapas",
+    label: "Sigilo",
+    desc: "Sigilo profissional",
   }
 ];
 

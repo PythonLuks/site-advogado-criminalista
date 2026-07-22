@@ -87,6 +87,19 @@ export function ComoFunciona() {
               </motion.div>
             ))}
           </div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+            className="mt-16 text-center relative z-10"
+          >
+            <p className="inline-block bg-primary/10 border border-primary/20 text-primary px-6 py-3 rounded-sm text-sm font-medium">
+              Em casos de prisão em flagrante, o contato inicial pode ser feito a qualquer horário — a resposta ocorre dentro do prazo legal da audiência de custódia (24h).
+            </p>
+          </motion.div>
+
         </div>
       </div>
     </section>

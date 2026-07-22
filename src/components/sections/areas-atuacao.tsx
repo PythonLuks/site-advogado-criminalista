@@ -17,7 +17,7 @@ const areas = [
   },
   {
     title: "Lei de Drogas & Crimes Hediondos",
-    desc: "Atuação estratégica e combativa em processos complexos de tráfico, associação para o tráfico e crimes de alta gravidade.",
+    desc: "Atuação técnica em processos de tráfico, associação para o tráfico e demais crimes hediondos, da fase policial ao trânsito em julgado.",
     icon: <Scale className="w-8 h-8" />
   },
   {

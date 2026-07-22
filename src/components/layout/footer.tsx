@@ -19,9 +19,12 @@ export function Footer() {
                 className="h-auto w-auto max-h-[60px]"
               />
             </Link>
-            <p className="text-muted-foreground text-sm leading-relaxed">
-              Soluções jurídicas estratégicas com excelência, agilidade e total confidencialidade.
-            </p>
+            <div className="space-y-1">
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Soluções jurídicas estratégicas com excelência, agilidade e total confidencialidade.
+              </p>
+              <p className="text-primary text-sm font-semibold tracking-wide">OAB/PE 44.544</p>
+            </div>
           </div>
 
           {/* Navegação */}
@@ -84,8 +87,8 @@ export function Footer() {
             &copy; {new Date().getFullYear()} Rodolfo Alexander. Todos os direitos reservados.
           </p>
           <div className="text-xs text-muted-foreground flex gap-4">
-            <Link href="#" className="hover:text-primary transition-colors">Política de Privacidade</Link>
-            <Link href="#" className="hover:text-primary transition-colors">Termos de Uso</Link>
+            <Link href="/privacidade" className="hover:text-primary transition-colors">Política de Privacidade</Link>
+            <Link href="/termos" className="hover:text-primary transition-colors">Termos de Uso</Link>
           </div>
         </div>
       </div>

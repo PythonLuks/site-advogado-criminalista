@@ -24,15 +24,15 @@ export function Hero() {
           className="space-y-8 max-w-2xl"
         >
           <div className="inline-block border border-primary/30 px-4 py-1.5 rounded-full text-xs font-medium text-primary tracking-widest uppercase mb-4 bg-primary/5">
-            ADVOCACIA CRIMINAL ESPECIALIZADA
+            ADVOCACIA CRIMINAL ESPECIALIZADA — OAB/PE 44.544
           </div>
           
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-white">
-            Defesa Criminal de Alta Complexidade: Protegendo sua Liberdade nos Tribunais de Todo o Brasil.
+            Defesa Criminal Estratégica em Casos Complexos, do Flagrante aos Tribunais Superiores.
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-            10 anos de atuação especializada em Lei de Drogas, Crimes Hediondos e Tribunal do Júri. Atuação técnica, combativa e discreta da delegacia aos Tribunais Superiores.
+            10 anos de atuação em Lei de Drogas, Crimes Hediondos e Tribunal do Júri, com atendimento técnico e sigiloso em todo o Brasil.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4">

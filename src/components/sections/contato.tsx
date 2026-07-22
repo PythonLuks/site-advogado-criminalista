@@ -11,6 +11,9 @@ const contactSchema = z.object({
   email: z.string().email("E-mail inválido"),
   telefone: z.string().min(10, "Telefone inválido"),
   mensagem: z.string().min(10, "A mensagem deve ter pelo menos 10 caracteres"),
+  aceitaTermos: z.boolean().refine(val => val === true, {
+    message: "Você deve aceitar a Política de Privacidade",
+  }),
 });
 
 type ContactForm = z.infer<typeof contactSchema>;
@@ -112,6 +115,23 @@ export function Contato() {
                 placeholder="Descreva brevemente seu caso..."
               />
               {errors.mensagem && <span className="text-destructive text-xs">{errors.mensagem.message}</span>}
+            </div>
+
+            <div className="flex items-start gap-3 pt-2">
+              <div className="flex items-center h-5">
+                <input
+                  id="aceitaTermos"
+                  type="checkbox"
+                  {...register("aceitaTermos")}
+                  className="w-4 h-4 rounded-sm border-white/10 bg-[#0a1f35] text-primary focus:ring-primary focus:ring-offset-background"
+                />
+              </div>
+              <div className="text-xs text-muted-foreground leading-tight">
+                <label htmlFor="aceitaTermos">
+                  Concordo com a <a href="/privacidade" className="text-primary hover:underline" target="_blank" rel="noopener noreferrer">Política de Privacidade</a> e o tratamento dos meus dados para contato.
+                </label>
+                {errors.aceitaTermos && <p className="text-destructive mt-1">{errors.aceitaTermos.message}</p>}
+              </div>
             </div>
 
             <ButtonPremium className="w-full" type="submit" disabled={isSubmitting} icon>
