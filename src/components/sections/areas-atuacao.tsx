@@ -6,35 +6,25 @@ import Link from "next/link";
 
 const areas = [
   {
-    title: "Lei de Drogas",
-    desc: "Defesa especializada em casos envolvendo tráfico, associação para o tráfico e crimes relacionados à lei de drogas.",
-    icon: <Scale className="w-8 h-8" />
-  },
-  {
-    title: "Crimes Hediondos",
-    desc: "Atuação estratégica e dedicada em processos complexos envolvendo crimes hediondos, garantindo o direito à ampla defesa.",
-    icon: <ShieldAlert className="w-8 h-8" />
-  },
-  {
-    title: "Tribunal do Júri",
-    desc: "Defesa técnica e combativa em plenário para crimes dolosos contra a vida, incluindo homicídio.",
-    icon: <Gavel className="w-8 h-8" />
-  },
-  {
-    title: "Prisão em Flagrante",
-    desc: "Acompanhamento imediato em delegacias para assegurar direitos constitucionais e evitar prisões preventivas desnecessárias.",
-    icon: <Lock className="w-8 h-8" />
-  },
-  {
-    title: "Habeas Corpus",
-    desc: "Impetração rápida e fundamentada de Habeas Corpus em todas as instâncias para garantir a liberdade do paciente.",
+    title: "Audiência de Custódia e Liberdade Provisória",
+    desc: "Atuação imediata no prazo de 24h após a prisão em flagrante. Defesa focada no relaxamento da prisão, anulação de ilegalidades e concessão de liberdade provisória.",
     icon: <Unlock className="w-8 h-8" />
   },
   {
-    title: "Execução Penal",
-    desc: "Acompanhamento humanizado da pena, buscando progressão de regime, livramento condicional e remição.",
-    icon: <FileText className="w-8 h-8" />
+    title: "Acompanhamento em Delegacias e Corregedorias",
+    desc: "Defesa técnica em depoimentos, oitivas, interrogatórios e mandados de busca perante Polícia Civil, Polícia Federal e Corregedorias. Garantia do direito ao silêncio e livre acesso aos autos (SV 14/STF).",
+    icon: <ShieldAlert className="w-8 h-8" />
   },
+  {
+    title: "Lei de Drogas & Crimes Hediondos",
+    desc: "Atuação estratégica e combativa em processos complexos de tráfico, associação para o tráfico e crimes de alta gravidade.",
+    icon: <Scale className="w-8 h-8" />
+  },
+  {
+    title: "Tribunal do Júri & Habeas Corpus",
+    desc: "Defesa especializada em plenário do Júri e impetração urgente de Habeas Corpus perante os Tribunais Estaduais, STJ e STF.",
+    icon: <Gavel className="w-8 h-8" />
+  }
 ];
 
 export function AreasAtuacao() {
@@ -52,7 +42,7 @@ export function AreasAtuacao() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
           {areas.map((area, index) => (
             <motion.div
               key={index}
