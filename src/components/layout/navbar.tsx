@@ -49,7 +49,6 @@ export function Navbar() {
             height={50} 
             className="h-auto w-auto max-h-[50px] opacity-90 group-hover:opacity-100 transition-opacity"
           />
-          <span className="text-[10px] text-muted-foreground tracking-wider mt-1 opacity-70 group-hover:opacity-100 transition-opacity">OAB/PE 44.544</span>
         </Link>
 
         {/* Desktop Nav */}

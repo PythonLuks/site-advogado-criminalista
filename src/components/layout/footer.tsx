@@ -23,7 +23,6 @@ export function Footer() {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 Soluções jurídicas estratégicas com excelência, agilidade e total confidencialidade.
               </p>
-              <p className="text-primary text-sm font-semibold tracking-wide">OAB/PE 44.544</p>
             </div>
           </div>
 

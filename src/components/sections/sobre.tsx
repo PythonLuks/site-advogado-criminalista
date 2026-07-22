@@ -55,7 +55,7 @@ export function Sobre() {
           
           <div className="space-y-6 text-muted-foreground leading-relaxed text-lg">
             <p>
-              Rodolfo Alexander é advogado criminalista (OAB/PE 44.544), com atuação dedicada ao Direito Penal, especialmente em Lei de Drogas, Crimes Hediondos e Tribunal do Júri.
+              Rodolfo Alexander é advogado criminalista, com atuação dedicada ao Direito Penal, especialmente em Lei de Drogas, Crimes Hediondos e Tribunal do Júri.
             </p>
             <p>
               Toda pessoa tem direito a uma defesa técnica e diligente. A atuação do escritório é pautada pelo sigilo profissional e pelo acompanhamento próximo de cada caso, da fase policial até os Tribunais Superiores.
